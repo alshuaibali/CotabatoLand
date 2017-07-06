@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>City Hall</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Always VVVV include-->
+	  <link rel="stylesheet" href="MyCSS/bootstrap.css">
+	  <link rel="stylesheet" href="MyCSS/w3.css">
+	<!-- Always ^^^^ include-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		<link rel="stylesheet" href="MyCSS/font-awesome.min.css">
+		<link rel="stylesheet" href="MyCSS/cityhall.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+<ul class="w3-navbar w3-teal w3-card-2 w3-left-align">
+  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+    <a class="w3-padding-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="menu.html" class="w3-hover-none w3-hover-text-pale-red w3-padding-large"> &#10094; BACK</a></li>
+  <li class="w3-hide-small"><a href="#history" class="w3-padding-large">HISTORY</a></li>
+  <li class="w3-hide-small"><a href="#mapme" class="w3-padding-large">MAP</a></li>
+  <li class="w3-hide-small"><a href="#contact" class="w3-padding-large">CONTACT</a></li>
+</ul>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <ul class="w3-navbar w3-left-align w3-pale-blue">
+    <li><a class="w3-padding-large" href="#history">HISTORY</a></li>
+    <li><a class="w3-padding-large"  href="#mapme"> <i class="fa fa-map-marker" style="width:20px"></i>MAP</a></li>
+    <li><a class="w3-padding-large"  href="#contact"> <i class="fa fa-phone" style="width:20px"></i>CONTACT</a></li>
+  </ul>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="MyImages/grandmosque/grandmosque1.jpg" style="width:100%" onclick="wasClick(this)" class="w3-hover-opacity">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>City Hall at Evening</h3>
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="MyImages/grandmosque/grandmosque2.jpg" style="width:100%" onclick="wasClick(this)" class="w3-hover-opacity">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>City Hall at Evening</h3>
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="MyImages/grandmosque/grandmosque3.jpg" style="width:100%" onclick="wasClick(this)" class="w3-hover-opacity">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>City Hall at Working Days</h3>  
+    </div>
+  </div>
+    <div class="mySlides w3-display-container w3-center">
+    <img src="MyImages/grandmosque/grandmosque4.jpg" style="width:100%" onclick="wasClick(this)" class="w3-hover-opacity">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>City Hall at Working Days</h3>
+      <p><b></b></p>    
+    </div>
+  </div>
+ 				<!--Picture Modal-->
+				<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+				  <span class="w3-closebtn w3-hover-red w3-text-white w3-xxlarge w3-container w3-display-topright">&times;</span>
+				  <div class="w3-modal-content w3-animate-zoom w3-round-xlarge">
+					<img id="img01" style="width:100%">
+				  </div>
+				</div> 
+				
+  <!-- The History Section -->
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="history">
+    <h2 class="w3-wide">GRAND MOSQUE</h2>
+	<h2 class="w3-wide"><em>"Sultan Haji Hassanal Bolkiah Masjid"</em></h2>
+    <p class="w3-opacity"><i>We love COTABATO CITY</i></p>
+    <p class="w3-justify">The Sultan Of Brunei,  funded the construction of this mosque 
+						  with his own personal money to help the emerging Muslim population in the Southern Philippines.</p>
+
+    <div class="w3-row w3-padding-32">
+      <div class="w3-second">
+	  <img src="MyImages/grandmosque/grandmosque1.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:90%">
+        <p class="w3-justify">Spotlight recently is on the US$ 45-million project, Masjid Sultan Hassanal Bolkiah. 
+							  A Grand Mosque sitting near the idle banks of Tamontaka River. It is partly founded by the 
+							  Philippine Government and the Sultanate of Brunei to whom the Masjid was named, Sultan Hassanal Bolkiah. 
+							  This magnificent mosque occupies 5000 square meters of a 5-hectare land. The four minarets stand at a 
+							  towering 43-meter high (similar to a 15-story building). The grounds can also accommodate 800 male plus 
+							  400 female worshippers at any given time. With its scale, it is the largest mosque in the Philippines.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Map Section -->
+  <div class="w3-black" id="mapme">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">The Maps</h2>
+      <p class="w3-opacity w3-center"><i>how to get there</i></p><br>
+	  
+		<div id="map" style="height:400px;filter:grayscale(90%);-webkit-filter:grayscale(90%);"></div>
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT US</h2>
+    <p class="w3-opacity w3-center"><i>You want to Visit Grand Mosque</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" href="#mapme" style="width:30px"></i> Kalanganan, Cotabato City, 9600<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +639357791171<br>
+		<i class="fa fa-phone" style="width:30px"></i> Tel No: (064) 421 5421<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: lgucotabato@gmail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="http://www.w3schools.com/w3css/form.asp" target="_blank">  <!--e link ko ang gmail ko d2-->
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Full Address" required name="Full Address">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-btn w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+
+<!-- Add Google Maps -->
+<script src="MyJS/marker.js"></script>
+<script src="MyJS/mapcity3.js"></script>
+<script src="MyJS/markerclusterer.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCb2qJVFcn9XU0BTfs5ZraFbbDyrCa64hE&callback=initMap" type="text/javascript"></script>
+<!-- Add Google Maps -->
+
+	  <script src="MyJS/jquery.js"></script>
+	  <script src="MyJS/bootstrap.js"></script>
+	  <script src="MyJS/cityhall.js"></script>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
+  <i class="fa fa-instagram w3-hover-text-purple"></i>
+  <p class="w3-medium">Powered by <a href="index.html" target="_blank">UIC Mobile Dev't</a></p>
+</footer>
+
+
+
+</body>
+
+</html>
