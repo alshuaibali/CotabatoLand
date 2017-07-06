@@ -1,6 +1,4 @@
-    <name>Cotabato Land</name>
-    <description>The Tourist Spots in Cotabato City</description>
-    <icon src="MyImages/icon128.png" />
+
 <uses-sdk
     android:minSdkVersion="9"
     android:targetSdkVersion="16" />
