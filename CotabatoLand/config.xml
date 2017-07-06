@@ -1,3 +1,6 @@
+    <name>Cotabato Land</name>
+    <description>The Tourist Spots in Cotabato City</description>
+    <icon src="MyImages/icon128.png" />
 <uses-sdk
     android:minSdkVersion="9"
     android:targetSdkVersion="16" />
@@ -10,9 +13,7 @@
     android:icon="@drawable/ic_launcher"
     android:label="@string/app_name"
     android:theme="@style/AppTheme" >
-    <name>Cotabato Land</name>
-    <description>The Tourist Spots in Cotabato City</description>
-    <icon src="MyImages/icon128.png" />
+
 
     <activity
         android:name=".MainActivity"
